@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.css">
+    <link rel="stylesheet" type="text/css" href='calculator.css'>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine-html.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/boot.js"></script>
+    <script type="text/javascript" src="calculator.js"></script>
+    <script type="text/javascript" src="calculator-test.js"></script>
+  </head>
+  <body>
+    <h1>Loan Payment Calculator</h1>
+    <div class='calc-container'>
+      <form id='calc-form'>
+        <label for='loan-amount'>Loan Amount</label>
+        <input type='text' id='loan-amount'>
+        <br>
+        <label for='loan-years'>Loan Term (Years)</label>
+        <input type='text' id='loan-years'>
+        <br>
+        <label for='loan-rate'>Interest Rate Per Year</label>
+        <input type='text' id='loan-rate'>
+        <br>
+        <button type='submit' id='calc-submit'>Calculate</button>
+        <br>
+      </form>
+      <div class='calc-container'>
+        <form>
+          <h3>Monthly Payment</h3>
+          <p id='monthly-payment'></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
